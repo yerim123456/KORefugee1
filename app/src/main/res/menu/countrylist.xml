@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/China"
+        android:enabled="true"
+        android:title="China" />
+    <item
+        android:id="@+id/France"
+        android:enabled="true"
+        android:icon="@drawable/test"
+        android:title="France"/>
+    <item
+        android:id="@+id/Russia"
+        android:enabled="true"
+        android:icon="@drawable/test"
+        android:title="Russia"/>
+    <item
+        android:id="@+id/Arab"
+        android:enabled="true"
+        android:icon="@drawable/test"
+        android:title="Arab Emirates" />
+    <item
+        android:id="@+id/Other"
+        android:enabled="true"
+        android:icon="@drawable/test"
+        android:title="Other" />
+</menu>

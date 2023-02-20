@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImageview"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signupguidetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="58dp"
+        android:text="Create your Account"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageview" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/roundedge_8"
+        android:elevation="2dp"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:paddingHorizontal="30dp"
+        android:textColor="#3D3D3D"
+        android:textColorHint="#9B9B9B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupguidetextView" />
+
+    <TextView
+        android:id="@+id/emailerrortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="error!"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedge_8"
+        android:elevation="2dp"
+        android:hint="Password"
+        android:paddingHorizontal="30dp"
+        android:textColor="#3D3D3D"
+        android:textColorHint="#9B9B9B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailerrortextView" />
+    <TextView
+        android:id="@+id/passworderrortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="error!"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+    <EditText
+        android:id="@+id/pluspasswordEditText"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedge_8"
+        android:elevation="2dp"
+        android:hint="Confirm Password"
+        android:paddingHorizontal="30dp"
+        android:textColor="#3D3D3D"
+        android:textColorHint="#9B9B9B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passworderrortextView" />
+    <TextView
+        android:id="@+id/pluspassworderrortextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="error!"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/pluspasswordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/pluspasswordEditText" />
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedge_8"
+        android:text="Sign up"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pluspassworderrortextView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
